@@ -1,3 +1,14 @@
+$(document).keydown (function (evt) {
+	if(evt.which == 88) {
+		$('.ryu-still').hide();
+		$('.ryu-ready').hide();
+		$('.ryu-cool').show();
+	};
+});
+$(document).keyup (function () {
+	$('.ryu-cool').hide();
+	$('.ryu-still').show();
+});
 $(document).ready(function () {
 	$('.ryu').mouseenter (function () {
 		$('.ryu-still').hide();
